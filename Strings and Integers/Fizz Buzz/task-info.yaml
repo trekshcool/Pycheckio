@@ -1,0 +1,76 @@
+type: checkiO
+files:
+  - name: mission.py
+    visible: true
+    text: |
+      def checkio(number: int) -> str:
+          # your code here
+          outputstring = ""
+          divibythree = False
+          divibyfive = False
+      
+          if (number % 3 == 0):
+              divibythree = True
+          if (number % 5 == 0):
+              divibyfive = True
+      
+          if divibythree == True:
+              outputstring = outputstring + "Fizz"
+          if (divibyfive == True) & (divibythree == True):
+              return "Fizz Buzz"
+          if (divibyfive == True):
+              outputstring = outputstring + "Buzz"
+          if (divibyfive == False) & (divibythree == False):
+              return str(number)
+          return outputstring
+      
+      
+      print("Example:")
+      print(checkio(15))
+      
+      # These "asserts" are used for self-checking
+      assert checkio(15) == "Fizz Buzz"
+      assert checkio(6) == "Fizz"
+      assert checkio(10) == "Buzz"
+      assert checkio(7) == "7"
+      
+      print("The mission is done! Click 'Check Solution' to earn rewards!")
+    learner_created: false
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Wed, 08 Nov 2023 18:14:00 UTC"
+code: |
+  def checkio(number: int) -> str:
+      # your code here
+      outputstring = ""
+      divibythree = False
+      divibyfive = False
+
+      if (number % 3 == 0):
+          divibythree = True
+      if (number % 5 == 0):
+          divibyfive = True
+
+      if divibythree == True:
+          outputstring = outputstring + "Fizz"
+      if (divibyfive == True) & (divibythree == True):
+          outputstring = outputstring + " "
+      if (divibyfive == True):
+          outputstring = outputstring + "Buzz"
+      if (divibyfive == False) & (divibythree == False):
+          return str(number)
+      return outputstring
+
+
+  print("Example:")
+  print(checkio(15))
+
+  # These "asserts" are used for self-checking
+  assert checkio(15) == "Fizz Buzz"
+  assert checkio(6) == "Fizz"
+  assert checkio(10) == "Buzz"
+  assert checkio(7) == "7"
+
+  print("The mission is done! Click 'Check Solution' to earn rewards!")
+seconds_from_change: 41

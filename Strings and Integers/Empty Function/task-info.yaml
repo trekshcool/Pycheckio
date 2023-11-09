@@ -1,0 +1,14 @@
+type: checkiO
+files:
+  - name: mission.py
+    visible: true
+    text: |
+      # write your code here
+    learner_created: false
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sat, 04 Nov 2023 21:13:21 UTC"
+code: |
+  # write your code here
+seconds_from_change: 9223372036854775807
