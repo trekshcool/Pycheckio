@@ -20,7 +20,10 @@ files:
       
       print("The mission is done! Click 'Check Solution' to earn rewards!")
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Thu, 09 Nov 2023 14:10:58 UTC"
 code: |
   def checkio(num: int) -> str:
       # your code here

@@ -1,6 +1,10 @@
 def checkio(num: int) -> str:
     # your code here
-    return ""
+    if num % 3 == 0:
+        return "Fizz"
+    else:
+        return str(num)
+
 
 
 print("Example:")
