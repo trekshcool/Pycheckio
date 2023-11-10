@@ -1,7 +1,28 @@
 def count_vowels(text: str) -> int:
     # your code here
-
-    return 0
+    vovelcount = 0
+    for i in text:
+        if i == "a":
+            vovelcount = vovelcount + 1
+        if i == "e":
+            vovelcount = vovelcount + 1
+        if i == "i":
+            vovelcount = vovelcount + 1
+        if i == "o":
+            vovelcount = vovelcount + 1
+        if i == "u":
+            vovelcount = vovelcount + 1
+        if i == "A":
+            vovelcount = vovelcount + 1
+        if i == "E":
+            vovelcount = vovelcount + 1
+        if i == "I":
+            vovelcount = vovelcount + 1
+        if i == "O":
+            vovelcount = vovelcount + 1
+        if i == "U":
+            vovelcount = vovelcount + 1
+    return vovelcount
 
 
 print("Example:")

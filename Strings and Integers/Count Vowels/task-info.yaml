@@ -25,7 +25,10 @@ files:
       
       print("The mission is done! Click 'Check Solution' to earn rewards!")
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Fri, 10 Nov 2023 19:23:46 UTC"
 code: |
   def count_vowels(text: str) -> int:
       # your code here
