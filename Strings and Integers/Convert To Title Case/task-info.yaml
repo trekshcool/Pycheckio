@@ -25,7 +25,10 @@ files:
       
       print("The mission is done! Click 'Check Solution' to earn rewards!")
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sun, 12 Nov 2023 10:36:04 UTC"
 code: |
   def to_title_case(sentence: str) -> str:
       # your code here

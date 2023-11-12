@@ -1,6 +1,6 @@
 def to_title_case(sentence: str) -> str:
     # your code here
-    return ""
+    return sentence.title()
 
 
 print("Example:")
