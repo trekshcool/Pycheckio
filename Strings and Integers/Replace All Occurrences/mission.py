@@ -1,6 +1,15 @@
 def replace_all(mainText: str, target: str, repl: str) -> str:
     # your code here
-    return ""
+    #splitstringlist = mainText.split()
+
+    #for i in splitstringlist:
+    #    if i == repl:
+    #        i = target
+
+    #outputstring = ' '.join(splitstringlist)
+
+    outputstring = mainText.replace(target, repl)
+    return outputstring
 
 
 print("Example:")
