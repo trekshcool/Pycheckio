@@ -20,7 +20,10 @@ files:
       
       print("The mission is done! Click 'Check Solution' to earn rewards!")
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Wed, 15 Nov 2023 18:13:23 UTC"
 code: |
   def factorial(n: int) -> int:
       # your code here

@@ -1,6 +1,20 @@
 def factorial(n: int) -> int:
     # your code here
-    return 0
+    countdownnum = n
+    outputdigit = 1
+    while True:
+        if countdownnum == 0:
+            return 1
+
+        outputdigit = outputdigit * countdownnum
+
+        print(outputdigit)
+
+        countdownnum = countdownnum - 1
+        if countdownnum == 1:
+            break
+
+    return outputdigit
 
 
 print("Example:")

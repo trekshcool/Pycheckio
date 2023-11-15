@@ -31,7 +31,7 @@ files:
 status: Solved
 feedback:
   message: All tests passed
-  time: "Tue, 14 Nov 2023 20:04:45 UTC"
+  time: "Wed, 15 Nov 2023 18:08:33 UTC"
 code: |
   def replace_all(mainText: str, target: str, repl: str) -> str:
       # your code here
