@@ -1,6 +1,17 @@
 def between_markers(text: str, start: str, end: str) -> str:
     # your code here
-    return ""
+    # split string into list
+    # cosplitstringlist = text.split()
+    # outputword = ""
+    # inwordbool = False
+    # # parse though the list
+    # for i in splitstringlist:
+    #     # prase though the word
+    #     for w in i:
+    #         if w == start:
+    #             inwordbool = True
+
+    return text.partition(start)[2].partition(end)[0]
 
 
 print("Example:")
