@@ -1,5 +1,11 @@
 def goes_after(word: str, first: str, second: str) -> bool:
     # your code here
+    lastletter = ""
+    for i in word:
+        if (i == second) & (lastletter == first):
+            return True
+        lastletter = i
+
     return False
 
 

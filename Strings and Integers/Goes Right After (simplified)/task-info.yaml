@@ -22,7 +22,10 @@ files:
       
       print("The mission is done! Click 'Check Solution' to earn rewards!")
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sat, 18 Nov 2023 19:01:37 UTC"
 code: |
   def goes_after(word: str, first: str, second: str) -> bool:
       # your code here
