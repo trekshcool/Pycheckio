@@ -25,7 +25,10 @@ files:
       
       print("The mission is done! Click 'Check Solution' to earn rewards!")
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Sat, 25 Nov 2023 09:20:23 UTC"
 code: |
   def count_occurrences(main_str: str, sub_str: str) -> int:
       # your code here

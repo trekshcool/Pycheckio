@@ -1,6 +1,14 @@
+import re
 def count_occurrences(main_str: str, sub_str: str) -> int:
     # your code here
-    return 0
+    # does not work, cant find overlapped stuff
+    # main_str.lower().count(sub_str.lower())
+
+    # this one works with re
+    # without f'(?={sub_str})' it does not find overlapping substings
+    count = len(re.findall(f'(?={sub_str})', main_str, flags=re.IGNORECASE))
+
+    return count
 
 
 print("Example:")
