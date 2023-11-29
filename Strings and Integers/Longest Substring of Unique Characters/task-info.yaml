@@ -5,7 +5,41 @@ files:
     text: |
       def longest_substr(s: str) -> int:
           # your code here
-          return 0
+          # pastlist = []
+          # currentmax = 0
+          # max = 0
+          #
+          # for letter in s:
+          #
+          #     if letter in pastlist:
+          #         if max < currentmax:
+          #             max = currentmax
+          #         currentmax = 0
+          #
+          #     pastlist.append(letter)
+          #     currentmax = currentmax + 1
+          #
+          # if max < currentmax:
+          #     max = currentmax
+      
+          if len(s) == 0: return 0
+      
+          low,up,maxbound = 0,1,(0,1)
+          used = {s[low]}
+      
+          while up < len(s):
+              if s[up] in used:
+                  used.remove(s[low])
+                  low += 1
+              else:
+                  used.add(s[up])
+                  up += 1
+      
+              if up - low > maxbound[1] - maxbound[0]:
+                  maxbound = (low,up)
+      
+      
+          return maxbound[1] - maxbound[0]
       
       
       print("Example:")
@@ -22,11 +56,48 @@ files:
       
       print("The mission is done! Click 'Check Solution' to earn rewards!")
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Wed, 29 Nov 2023 17:20:34 UTC"
 code: |
   def longest_substr(s: str) -> int:
       # your code here
-      return 0
+      # pastlist = []
+      # currentmax = 0
+      # max = 0
+      #
+      # for letter in s:
+      #
+      #     if letter in pastlist:
+      #         if max < currentmax:
+      #             max = currentmax
+      #         currentmax = 0
+      #
+      #     pastlist.append(letter)
+      #     currentmax = currentmax + 1
+      #
+      # if max < currentmax:
+      #     max = currentmax
+
+      if len(s) == 0: return 0
+
+      low,up,maxbound = 0,1,(0,1)
+      used = {s[low]}
+
+      while up < len(s):
+          if s[up] in used:
+              used.remove(s[low])
+              low += 1
+          else:
+              used.add(s[up])
+              up += 1
+
+          if up - low > maxbound[1] - maxbound[0]:
+              maxbound = (low,up)
+
+
+      return maxbound[1] - maxbound[0]
 
 
   print("Example:")
@@ -42,4 +113,4 @@ code: |
   assert longest_substr("dvdf") == 3
 
   print("The mission is done! Click 'Check Solution' to earn rewards!")
-seconds_from_change: 9223372036854775807
+seconds_from_change: 2
