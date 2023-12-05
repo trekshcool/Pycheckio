@@ -20,7 +20,10 @@ files:
       
       print("The mission is done! Click 'Check Solution' to earn rewards!")
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: All tests passed
+  time: "Tue, 05 Dec 2023 15:13:03 UTC"
 code: |
   def max_digit(value: int) -> int:
       # your code here

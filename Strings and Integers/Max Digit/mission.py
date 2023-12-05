@@ -1,6 +1,14 @@
 def max_digit(value: int) -> int:
     # your code here
-    return 0
+    valstring = str(value)
+    maxnum = 0
+
+    for i in valstring:
+      j = int(i)
+      if j >= maxnum:
+        maxnum = j
+
+    return maxnum
 
 
 print("Example:")
