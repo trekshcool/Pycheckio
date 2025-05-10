@@ -3,7 +3,7 @@ def count_occurrences(main_str: str, sub_str: str) -> int:
     # your code here
     # does not work, cant find overlapped stuff
     # main_str.lower().count(sub_str.lower())
-
+    # Did not fully understand this one, need to revisit it
     # this one works with re
     # without f'(?={sub_str})' it does not find overlapping substrings
     count = len(re.findall(f'(?={sub_str})', main_str, flags=re.IGNORECASE))
