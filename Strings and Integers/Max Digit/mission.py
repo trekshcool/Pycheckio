@@ -2,7 +2,7 @@ def max_digit(value: int) -> int:
     # your code here
     valstring = str(value)
     maxnum = 0
-
+    # Split the string into each letter then compare them with the max, then send max
     for i in valstring:
       j = int(i)
       if j >= maxnum:

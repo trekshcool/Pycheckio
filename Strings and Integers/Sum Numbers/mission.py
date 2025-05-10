@@ -1,5 +1,8 @@
 def sum_numbers(text: str) -> int:
     # your code here
+    # return the sum all the numbers in the string
+    # if there are no numbers in the string, return 0
+
     return 0
 
 
